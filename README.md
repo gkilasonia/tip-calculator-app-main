@@ -28,7 +28,7 @@ User should be able to:
 
 ### Links
 
-- Solution URL: ()
+- Solution URL: (https://github.com/gkilasonia/tip-calculator)
 - Live Site URL: ()
 
 ## My process
