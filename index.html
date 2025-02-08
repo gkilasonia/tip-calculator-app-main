@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./images/logo.svg"
+        alt="Spliter logo, divided in half. SPLI is in top line and TTER in bottom line"
+      />
+    </header>
+    <main>
+      <div class="calculator">
+        <div class="bill">
+          <label class="bill-label" for="bill">Bill</label>
+          <img
+            class="input-prefix-dollar"
+            src="./images/icon-dollar.svg"
+            alt="Dollar sign"
+          />
+          <input
+            class="bill-input"
+            type="number"
+            id="bill"
+            name="bill"
+            placeholder="0"
+            min="0"
+            step="0.01"
+          />
+        </div>
+        <div class="select-tip">
+          <label for="select-tip">Select Tip %</label>
+          <div class="tip-buttons">
+            <button id="5" class="tip-button">5%</button>
+            <button id="10" class="tip-button">10%</button>
+            <button id="15" class="tip-button">15%</button>
+            <button id="25" class="tip-button">25%</button>
+            <button id="50" class="tip-button">50%</button>
+            <input
+              class="tip-input"
+              type="number"
+              id="custom-tip"
+              name="custom-tip"
+              placeholder="Custom"
+              min="0"
+              step="1"
+            />
+          </div>
+        </div>
+        <div class="number-of-people">
+          <div class="label-container">
+            <label class="number-of-people-label" for="number-of-people"
+              >Number of People</label
+            >
+            <label
+              id="can’t-be-zero-label"
+              class="can’t-be-zero-label"
+              for="number-of-people"
+              >Can’t be zero</label
+            >
+          </div>
+          <img
+            class="input-prefix-person"
+            src="./images/icon-person.svg"
+            alt="Person icon"
+          />
+          <input
+            class="number-of-people-input"
+            type="number"
+            id="number-of-people"
+            name="number-of-people"
+            placeholder="0"
+            min="0"
+            step="1"
+          />
+        </div>
+      </div>
+      <div class="reset">
+        <div class="results">
+          <div class="tip-amount">
+            <div class="tip-amount-text">
+              <span class="text">Tip Amount</span>
+              <span class="per-person">/ person</span>
+            </div>
+            <span id="tip-amount-value" class="tip-amount-value">$0.00</span>
+            <!-- Default value -->
+          </div>
+          <div class="total">
+            <div class="total-text">
+              <span class="text">Total</span>
+              <span class="per-person">/ person</span>
+            </div>
+            <span id="total-value" class="total-value">$0.00</span>
+            <!-- Default value -->
+          </div>
+        </div>
+        <button id="reset-button" class="reset-button">RESET</button>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">KILASA</a>.
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
