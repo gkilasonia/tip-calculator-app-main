@@ -23,13 +23,13 @@ User should be able to:
 
 ### Screenshot
 
-![]()
-![]()
+![](./images/desktop-screenshot.png)
+![](./images/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: (https://github.com/gkilasonia/tip-calculator)
-- Live Site URL: ()
+- Solution URL: (https://github.com/gkilasonia/tip-calculator-app-main)
+- Live Site URL: (https://kilasa-tip-calculator-app-main.netlify.app/)
 
 ## My process
 
