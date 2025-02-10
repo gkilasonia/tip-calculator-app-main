@@ -6,6 +6,7 @@
 :root {
   --Error-messege-red: hsl(13, 70%, 61%);
   --Button-hover-cyan: hsl(173, 61%, 77%);
+  --Reset-button-background: hsl(183, 79%, 24%);
   --Strong-cyan: hsl(172, 67%, 45%);
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -203,7 +204,7 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
 
 .reset-button {
   width: 281px;
-  background-color: var(--Strong-cyan);
+  background-color: var(--Reset-button-background);
   color: var(--Very-dark-cyan);
   border-radius: 5px;
   font-size: 20px;
