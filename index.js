@@ -17,6 +17,7 @@ numberOfPeople.addEventListener("input", updateNumberOfPeople);
 resetButton.addEventListener("click", resetCalculator);
 
 function updateBillAmount(event) {
+  billInput.style.opacity = "1";
   billAmount = parseFloat(event.target.value) || 0;
   calculateTip();
 }
@@ -24,9 +25,11 @@ function updateBillAmount(event) {
 function updateCustomTip(event) {
   tipPercentage = parseFloat(event.target.value) || 0;
   calculateTip();
+  validateNumberOfPeople();
 }
 
 function updateNumberOfPeople(event) {
+  numberOfPeople.style.opacity = "1";
   numberOfPeopleValue = parseFloat(event.target.value) || 0;
   calculateTip();
   validateNumberOfPeople();
@@ -51,10 +54,10 @@ function calculateTip() {
 function validateNumberOfPeople() {
   if (numberOfPeopleValue > 0) {
     cantBeZeroLabel.style.display = "none";
-    numberOfPeople.style.border = "none";
+    numberOfPeople.style.outline = "none";
   } else {
     cantBeZeroLabel.style.display = "block";
-    numberOfPeople.style.border = "2px solid hsl(13, 70%, 61%)";
+    numberOfPeople.style.outline = "2px solid hsl(13, 70%, 61%)";
   }
 }
 
@@ -81,7 +84,7 @@ function resetCalculator() {
   tipPerPerson.textContent = "$0.00";
   totalPerPerson.textContent = "$0.00"; // Reset per-person total
   cantBeZeroLabel.style.display = "none";
-  numberOfPeople.style.border = "none";
+  numberOfPeople.style.outline = "none";
 
   billAmount = 0;
   numberOfPeopleValue = 0;

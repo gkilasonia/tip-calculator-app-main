@@ -98,6 +98,11 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
   color: var(--Very-dark-cyan);
 }
 
+.bill-input::placeholder,
+.number-of-people-input::placeholder {
+  opacity: 0.35;
+}
+
 /* Select Tip section */
 
 .select-tip {
@@ -242,7 +247,7 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
     bottom: 0;
   }
 
-  /* Hover effect */
+  /* Hover and focus effect */
 
   input:hover,
   button:hover {
@@ -257,7 +262,13 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
     color: var(--Very-dark-cyan);
   }
 
-  /* Calculator section */
+  .bill-input:hover,
+  .number-of-people-input:hover,
+  .bill-input:focus,
+  .number-of-people-input:focus {
+    outline: 2px solid var(--Strong-cyan);
+    opacity: 1;
+  }
 
   .calculator {
     margin: 13px 0 16px 0;
@@ -287,6 +298,13 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
 
   .results {
     gap: 41px;
+  }
+
+  .tip-amount-value,
+  .total-value {
+    font-size: 48px;
+    line-height: 1.479;
+    letter-spacing: -1px;
   }
 
   .reset-button {
