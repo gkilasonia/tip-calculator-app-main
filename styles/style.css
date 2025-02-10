@@ -297,7 +297,7 @@ Keeps "Bill" and "Select Tip" containers separated from "Reset" container IOT sw
   }
 
   .results {
-    gap: 41px;
+    gap: 25px;
   }
 
   .tip-amount-value,
